@@ -1,5 +1,6 @@
 package com.github.supercoding.web.dto;
 
+import com.github.supercoding.repository.ItemEntity;
 import lombok.Getter;
 
 import java.util.Objects;
@@ -28,6 +29,14 @@ public class Item {
         this.type = type;
         this.price = price;
         this.spec = new Spec(cpu, capacity);
+    }
+
+    public Item(ItemEntity itemEntity) {
+        this.id = String.valueOf(itemEntity.getId());
+        this.name = itemEntity.getName();
+        this.type = itemEntity.getType();
+        this.price = itemEntity.getPrice();
+        this.spec = new Spec(itemEntity.getCpu(), itemEntity.getCapacity());
     }
 
     @Override
