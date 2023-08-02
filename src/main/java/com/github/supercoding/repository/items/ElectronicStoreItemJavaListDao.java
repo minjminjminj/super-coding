@@ -1,4 +1,4 @@
-package com.github.supercoding.repository;
+package com.github.supercoding.repository.items;
 
 import com.github.supercoding.web.dto.Item;
 import org.springframework.stereotype.Repository;
@@ -35,12 +35,13 @@ public class ElectronicStoreItemJavaListDao implements ElectronicStoreItemReposi
     }
 
     @Override
-    public void deleteItem(int parseInt) {
-
-    }
+    public void deleteItem(int parseInt) { }
 
     @Override
     public ItemEntity findItemById(Integer idInt) {
         return null;
     }
+
+    @Override
+    public void updateItemStock(Integer itemId, Integer stock) { }
 }

@@ -1,6 +1,6 @@
 package com.github.supercoding.web.dto;
 
-import com.github.supercoding.repository.ItemEntity;
+import com.github.supercoding.repository.items.ItemEntity;
 import lombok.Getter;
 
 import java.util.Objects;
